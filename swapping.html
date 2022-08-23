@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping Variables</title>
+</head>
+<body>
+
+    <style>
+
+        .heading{
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+    </style>
+
+    <h3 class="heading">Swapping variables without using third variable</h3>
+
+    <p>Value of first input after swapping: <span id="input1"></span></p>
+    <p>Value of second=input after swapping: <span id="input2"></span></p>
+
+    <!-- 12 16 -->
+
+
+
+    <script>
+
+        let inputOne = parseInt(prompt("Enter first value:"));
+        let inputTwo = parseInt(prompt("Enter second value:"));
+
+        // Swapping using addition and subtraction operators
+        inputOne = inputOne + inputTwo; // 28
+        inputTwo = inputOne - inputTwo; // -4
+        inputOne = inputOne - inputTwo; // 
+
+        var resultOne = inputOne;
+        var resultTwo = inputTwo;
+
+        document.getElementById("input1").innerText = inputOne;
+        document.getElementById("input2").innerText = inputTwo;
+
+
+    </script>
+
+
+</body>
+</html>

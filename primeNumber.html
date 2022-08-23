@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime number</title>
+</head>
+<body>
+
+    <h3 class="heading">Finding prime number without using modulus ' % '</h3>
+
+    <p id="result"></p>
+    
+    <style>
+        .heading{
+            text-align: center;
+            font-family: sans-serif;
+        }
+    </style>
+
+    <script>
+
+        var value = parseInt(prompt("Enter first value:"));
+
+        let code;
+
+        var answer = document.getElementById("result");
+
+            for(let i = 2; i < value; i++){
+                if(((value / i) * i - value) == 0){
+                    code++;
+                }
+            }
+
+        if(code == 0){
+            answer.innerText = value + " is a prime number.";
+        } else{
+            answer.innerText = value + " is not a prime number.";
+        }
+
+    </script>
+
+</body>
+</html>
